@@ -15,7 +15,3 @@ I also added in a start location and an end location. I have not added in rooms
 to block the end, which would need some sort of key to unlock a path towards the end.
 
 I am very pleased with the result of my first attempt with PCG, it was a fun and rewarding project.
-
-Libraries
-----------------
-[FPSMeter](http://darsa.in/fpsmeter/)
