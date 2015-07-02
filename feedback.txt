@@ -1,0 +1,44 @@
+ - Mist vooral de combinatie met bestaande doolhof generator
+ - Maze generator + game niet uitdagend genoeg, in 3 weken klaar.
+ - k.d.karavolos@hva.nl
+
+
+
+ Grid (? x ?)
+ Top down view
+ Each room has ? tiles
+
+
+ Spelunky
+  - 4x4 grid, 10x8 rooms
+  - pre-made levels
+  	+ adds rng to the levels
+  - 50 rooms
+  - each level is generated at begin, seperatly
+
+ Binding of Isaac
+  - Complete level is generated at start
+  - Room elements are genereted once you enter room
+
+ In common
+  - Grid(-ish)
+  - At start a level (or map in Isaac) is generated at once according to pre-made rules.
+  - pre-made designed parts
+
+
+Technique: Binary Space Partitioning (BSP) (Spatial Algorithms, Grid Subdivision)
+Rules:
+ - End: has to be a root node
+ - Start: any non-root node
+ - End: include text "Buy the 'Boss DLC' to include boss fights."
+ - Each room tile-based. For easier physics walls are unreachable tiles
+ - Core rooms contain rules for layout
+ - Core rooms are divided at the end of BSP.
+
+
+
+ http://codeincomplete.com/posts/2013/12/1/javascript_game_foundations/
+ http://dmauro.github.io/Keypress/
+
+ OpenRA Actor: https://github.com/OpenRA/OpenRA/blob/bleed/OpenRA.Game/Actor.cs
+ Robin AS3 ding: https://github.com/Whojoo/AS3_WhojooFramework/tree/master/src/whojooEngine
