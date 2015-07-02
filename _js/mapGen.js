@@ -121,12 +121,7 @@ function checkMultiplier(multiplier, value)
 
 	//console.log(value + '|' + val1 + '|' + val2);
 
-	if (val1 % Game.areaSize == 0 && val2 % Game.areaSize == 0)
-		return val1 / value;
-	
-	//HELP! in case of emergencies.
-	alert('seriously, help me!!!');
-	return multiplier; //Have to return something.
+	return val1 / value;
 }
 
 function pather(oRoom)
@@ -233,7 +228,6 @@ function canConnect(room1, room2)
 		return left.x + left.width - right.x >= Game.tileSize * 4;
 	}
 
-	console.log('uh oh');
 	//If we reach this, then there is no connection possible.
 	return !bool;
 }
